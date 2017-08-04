@@ -69,122 +69,141 @@ body{
 		}
 	}
 }
+
 .main{
-	flex:1;
+	width: 100%;
 	overflow: hidden;
-	overflow-y: scroll;
 	background: #fff;
 	margin-top: 0.3rem;
 	height: 100%;
-	.scroll1{
-		height: 150%;
-	}
-	.mid{
-		flex:1;
-		margin:0 0.3rem;
-		height: 2.5rem;
-		margin-top: 0.3rem;
-		box-sizing: border-box;
+	.swiper-wrapper{
+		width: 100%;
+		height: 100%;
 		display: flex;
-		flex-direction: column;
-		position: relative;
-		img{
+		.main1{
 			width: 100%;
 			height: 100%;
-		}
-		.tops{
-			width: 100%;
-			padding:0.2rem 0.2rem;
-			box-sizing: border-box;
-			display: flex;
-			height: 1.4rem;
-			position: absolute;
-			top: 0;
-			left: 0;
-			.left{
+			.scroll1{
+				height: 150%;
+			}
+			.mid{
 				flex:1;
+				margin:0 0.3rem;
+				height: 2.5rem;
+				margin-top: 0.3rem;
+				box-sizing: border-box;
 				display: flex;
-				align-items: flex-start;
-				height: 100%;
-				span{
-					display: inline-block;
-					width: 15px;
-					height: 12px;
-					margin-right: 9px;
-					color: #fff;
-					img{
-						width: 100%;
+				flex-direction: column;
+				position: relative;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				.tops{
+					width: 100%;
+					padding:0.2rem 0.2rem;
+					box-sizing: border-box;
+					display: flex;
+					height: 1.4rem;
+					position: absolute;
+					top: 0;
+					left: 0;
+					.left{
+						flex:1;
+						display: flex;
+						align-items: flex-start;
 						height: 100%;
+						span{
+							display: inline-block;
+							width: 15px;
+							height: 12px;
+							margin-right: 9px;
+							color: #fff;
+							img{
+								width: 100%;
+								height: 100%;
+							}
+						}
+						em{
+							font-style: normal;
+							font-size: 45px;
+							height: 100%;
+							color: #fff;
+							display: flex;
+							align-items: center;
+							vertical-align: top;
+						}
+					}
+					.right{
+						font-size: 20px;
+						color: #fff;
+						display: flex;
+						align-items: flex-end;
 					}
 				}
-				em{
-					font-style: normal;
-					font-size: 45px;
-					height: 100%;
-					color: #fff;
+				.bot{
+					width: 100%;
+					padding:0.1rem 0.4rem;
+					box-sizing: border-box;
+					display: flex;
+					height: 1rem;
+					position: absolute;
+					top: 1.4rem;
+					left: 0;
 					display: flex;
 					align-items: center;
-					vertical-align: top;
+					justify-content: center;
+					flex-direction: column;
+					font-size: 0.2rem;
+					p{
+						width: 100%;
+						display: flex;
+						margin-top: 0.03rem;
+						font-size: 0.22rem;
+						span{
+							background: url(../images/b.png) no-repeat;
+							display: inline-block;
+							display: flex;
+							margin-top: 0.05rem;
+							margin-right: 0.2rem;
+							background-size: 15px;
+						}
+						&:nth-child(1){
+							color: #15ae70;
+							span{
+								b{
+									width: 15px;
+									height: 13px;
+									display: inline-block;
+									background-position: 0px 0px;
+								}
+							}
+						}
+						&:nth-child(2){
+							color: #9b9b9b;
+							span{
+								background-position: 0px -18px;
+								b{
+									width: 15px;
+									height: 13px;
+									display: inline-block;
+									
+								}
+							}
+						}
+					}
 				}
-			}
-			.right{
-				font-size: 20px;
-				color: #fff;
-				display: flex;
-				align-items: flex-end;
 			}
 		}
-		.bot{
+		.main2{
 			width: 100%;
-			padding:0.1rem 0.4rem;
-			box-sizing: border-box;
-			display: flex;
-			height: 1rem;
-			position: absolute;
-			top: 1.4rem;
-			left: 0;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			font-size: 0.2rem;
-			p{
-				width: 100%;
-				display: flex;
-				margin-top: 0.03rem;
-				font-size: 0.22rem;
-				span{
-					background: url(../images/b.png) no-repeat;
-					display: inline-block;
-					display: flex;
-					margin-top: 0.05rem;
-					margin-right: 0.2rem;
-					background-size: 15px;
-				}
-				&:nth-child(1){
-					color: #15ae70;
-					span{
-						b{
-							width: 15px;
-							height: 13px;
-							display: inline-block;
-							background-position: 0px 0px;
-						}
-					}
-				}
-				&:nth-child(2){
-					color: #9b9b9b;
-					span{
-						background-position: 0px -18px;
-						b{
-							width: 15px;
-							height: 13px;
-							display: inline-block;
-							
-						}
-					}
-				}
-			}
+			height: 100%;
+			background:pink;
+		}
+		.main3{
+			width: 100%;
+			height: 100%;
+			background: skyblue;
 		}
 	}
 }

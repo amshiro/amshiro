@@ -6,85 +6,90 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
 	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<meta name="format-detection" content="telphone=no, email=no" >
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="fonts/iconfont.css">
 	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="box">
 		<header class="header">
 			<ul class="uls">
-				<li class="on">未使用</li>
-				<li>已使用</li>
-				<li>已过期</li>
+				<li onclick="fn(0)" class="on">未使用</li>
+				<li onclick="fn(1)">已使用</li>
+				<li onclick="fn(2)">已过期</li>
 				<li class="list"></li>
 			</ul>
 		</header>
-		<div class="main">
-			<div class="scroll1">
-				<div class="mid">
-				<img src="./images/11_03.png" alt="">
-					<div class="tops">
-						<div class="left">
-							<span><img src="images/a.png" alt=""></span><em>5</em>
+		<div class="swiper-container main">
+			<div class="swiper-wrapper banner">
+				<div class="swiper-slide main1">
+					<div class="scroll1">
+						<div class="mid">
+						<img src="./images/11_03.png" alt="">
+							<div class="tops">
+								<div class="left">
+									<span><img src="images/a.png" alt=""></span><em>5</em>
+								</div>
+								<div class="right">
+									满减券
+								</div>
+							</div>
+							<div class="bot">
+								<p><span><b></b></span>使用门槛：1满100元即可使用; 2.本券项目</p>
+								<p><span><b></b></span>使用时间：即日起至2016年11月10日</p>
+							</div>
 						</div>
-						<div class="right">
-							满减券
+						<div class="mid">
+						<img src="./images/12_03.png" alt="">
+							<div class="tops">
+								<div class="left">
+									<span>折</span><em>9.5</em>
+								</div>
+								<div class="right">
+									折扣券
+								</div>
+							</div>
+							<div class="bot">
+								<p><span><b></b></span>使用门槛：1满100元即可使用; 2.本券项目</p>
+								<p><span><b></b></span>使用时间：即日起至2016年11月10日</p>
+							</div>
 						</div>
-					</div>
-					<div class="bot">
-						<p><span><b></b></span>使用门槛：1满100元即可使用; 2.本券项目</p>
-						<p><span><b></b></span>使用时间：即日起至2016年11月10日</p>
+						<div class="mid">
+						<img src="./images/14_06.png" alt="">
+							<div class="tops">
+								<div class="left">
+									<span><img src="images/a.png" alt=""></span><em>10</em>
+								</div>
+								<div class="right">
+									满减券
+								</div>
+							</div>
+							<div class="bot">
+								<p><span><b></b></span>使用门槛：1满100元即可使用; 2.本券项目</p>
+								<p><span><b></b></span>使用时间：即日起至2016年11月10日</p>
+							</div>
+						</div>
+						<div class="mid">
+						<img src="./images/11_03.png" alt="">
+							<div class="tops">
+								<div class="left">
+									<span><img src="images/a.png" alt=""></span><em>10</em>
+								</div>
+								<div class="right">
+									满减券
+								</div>
+							</div>
+							<div class="bot">
+								<p><span><b></b></span>使用门槛：1满100元即可使用; 2.本券项目</p>
+								<p><span><b></b></span>使用时间：即日起至2016年11月10日</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="mid">
-				<img src="./images/12_03.png" alt="">
-					<div class="tops">
-						<div class="left">
-							<span>折</span><em>9.5</em>
-						</div>
-						<div class="right">
-							折扣券
-						</div>
-					</div>
-					<div class="bot">
-						<p><span><b></b></span>使用门槛：1满100元即可使用; 2.本券项目</p>
-						<p><span><b></b></span>使用时间：即日起至2016年11月10日</p>
-					</div>
-				</div>
-				<div class="mid">
-				<img src="./images/14_06.png" alt="">
-					<div class="tops">
-						<div class="left">
-							<span><img src="images/a.png" alt=""></span><em>10</em>
-						</div>
-						<div class="right">
-							满减券
-						</div>
-					</div>
-					<div class="bot">
-						<p><span><b></b></span>使用门槛：1满100元即可使用; 2.本券项目</p>
-						<p><span><b></b></span>使用时间：即日起至2016年11月10日</p>
-					</div>
-				</div>
-				<div class="mid">
-				<img src="./images/11_03.png" alt="">
-					<div class="tops">
-						<div class="left">
-							<span><img src="images/a.png" alt=""></span><em>10</em>
-						</div>
-						<div class="right">
-							满减券
-						</div>
-					</div>
-					<div class="bot">
-						<p><span><b></b></span>使用门槛：1满100元即可使用; 2.本券项目</p>
-						<p><span><b></b></span>使用时间：即日起至2016年11月10日</p>
-					</div>
-				</div>
+				<div class="swiper-slide main2">1</div>
+				<div class="swiper-slide main3">2</div>
 			</div>
 		</div>
-		
 	</div>
 	<script src="js/swiper-3.3.1.min.js"></script>
 	<script src="js/iscroll5.js"></script>
